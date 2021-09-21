@@ -2,7 +2,7 @@
     <head>
         <script type="application/x-javascript">
             function opensauce() {
-                var digit1 = ["", "1", "2", "3"];
+                var digit1 = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
                 var digit2 = ["", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
                 var digit3 = ["", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
                 var digit4 = ["", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -23,6 +23,9 @@
                 shuffle(digit4);
                 shuffle(digit5);
                 shuffle(digit6);
+                if (digit1[0] > 3) {
+                    digit6[0] = "" ;
+                }
                 var sauceurl = "https://nhentai.net/g/"+digit1[0]+digit2[0]+digit3[0]+digit4[0]+digit5[0]+digit6[0] ;
                 window.open(sauceurl, "_self") ;
             }
